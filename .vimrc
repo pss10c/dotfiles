@@ -54,6 +54,10 @@ map <c-h> <c-w>h
 inoremap jk <Esc>
 inoremap kj <Esc>
 
+" Jump to start and end of line using the home row keys
+noremap H ^
+noremap L $
+
 
 " easier moving between tabs
 map <Leader>n <esc>:tabprevious<CR>
@@ -76,19 +80,33 @@ vnoremap > >gv  " better indentation
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
-
-" Color scheme
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
-" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-set t_Co=256
-color wombat256mod
-
-
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
 filetype off
 filetype plugin indent on
 syntax on
+
+
+" Color scheme
+" mkdir -p ~/.vim/colors && cd ~/.vim/colors
+" wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
+set t_Co=256
+"color wombat256mod
+
+"" Setup Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
+
+if has('gui_running')
+       set background=light
+   else
+       set background=dark
+   endif
+colorscheme solarized
+
 
 
 " Showing line numbers and length
@@ -139,13 +157,15 @@ set noswapfile
 "" call pathogen#infect()
 
 
-" Setup Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
+"
+" Cute python
+Bundle 'ehamberg/vim-cute-python'
+
+" Run python code
+map <F5> :w <CR>!clear <CR>:!python % <CR>
 
 " This helps to fold python blocks
 Bundle 'vim-scripts/Python-Syntax-Folding'
