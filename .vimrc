@@ -14,6 +14,13 @@ endif
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Setup Vundle https://github.com/gmarik/vundle.git
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
