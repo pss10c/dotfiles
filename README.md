@@ -34,6 +34,10 @@ strange symbols in your status line than check [this page][6] about font
 patching for __Powerline__ or use some [pre patched][7] ones and check your OS
 manual on font installation.
 
+Also check this resources. A lot was taken from it:
+* Great manual to how turn your vim into Python IDE [vim-as-python-ide][8]
+* Vide of Martin Bronchhaus talk on configuring vim [youtube video][9]
+
 
 # bash
 All bash config files start with ".bash". This setup has made to support
@@ -48,3 +52,5 @@ future. It is not recommended to use it now.
 [5]: http://bit.ly/16kv1lI
 [6]: https://powerline.readthedocs.org/en/latest/fontpatching.html
 [7]: https://github.com/Lokaltog/powerline-fonts
+[8]: http://unlogic.co.uk/posts/vim-python-ide.html
+[9]: http://youtu.be/YhqsjUUHj6g
