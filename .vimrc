@@ -188,10 +188,11 @@ Bundle 'orenhe/pylint.vim'
 " Settings for vim-powerline
 " cd ~/.vim/bundle
 " git clone git://github.com/Lokaltog/vim-powerline.git
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " set rtp+=/home/presto/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
+set guifont=Droid\ Sans\ Mono\ for\ Powerline
 
 " Settings for ctrlp
 " cd ~/.vim/bundle
@@ -208,8 +209,10 @@ set wildignore+=*/coverage/*
 " and uncomment the part about jedi-vim instead
 " cd ~/.vim/bundle
 " git clone https://github.com/klen/python-mode
+Bundle 'klen/python-mode'
 "" map <Leader>g :call RopeGotoDefinition()<CR>
 "" let ropevim_enable_shortcuts = 1
+let g:pymode_rope = 0
 "" let g:pymode_rope_goto_def_newwin = "vnew"
 "" let g:pymode_rope_extended_complete = 1
 "" let g:pymode_breakpoint = 0
