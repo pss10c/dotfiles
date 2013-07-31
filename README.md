@@ -15,7 +15,7 @@ and for vim config
 cd ~ && ln -si <repo folder>/.vimrc ~/
 ```
 
-# vim config
+# vim
 Vim config is the .vimrc file.  I use __Vundle__ as vim plugin manager. Check
 [Vundle docs][1] for installation and config info.
 Also vim with this config is setup mostly to code in Python. But it will work
@@ -35,7 +35,7 @@ patching for __Powerline__ or use some [pre patched][7] ones and check your OS
 manual on font installation.
 
 
-# bash config
+# bash
 All bash config files start with ".bash". This setup has made to support
 couple of platforms at the same time (tested on OSX Lion and Ubuntu Linux).
 
