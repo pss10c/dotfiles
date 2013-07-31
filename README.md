@@ -1,4 +1,4 @@
-config
+dotfiles
 ======
 
 This repository contains some config files I use in different system like
