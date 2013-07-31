@@ -38,6 +38,8 @@ manual on font installation.
 # bash
 All bash config files start with ".bash". This setup has made to support
 couple of platforms at the same time (tested on OSX Lion and Ubuntu Linux).
+NOTE: linux .bashrc file is a bit bulky and will be changed in the nearest
+future. It is not recommended to use it now.
 
 [1]: https://github.com/gmarik/vundle
 [2]: http://ethanschoonover.com/solarized
