@@ -1,0 +1,17 @@
+# add some lookup pathes
+export PATH=$PATH:/usr/local/sbin:/Users/pss/Library/Python/2.7/bin
+
+
+########## ALIASES ############################################################
+alias vim="mvim -v"
+alias gvim="mvim -g"
+alias ls="ls -G" # Enable ls with color
+########## END OF ALIASES #####################################################
+
+# Enable powerline status line
+# Check https://github.com/Lokaltog/powerline for more details
+. ~/.vim/bundle/powerline/powerline/bindings/bash/powerline.sh
+
+# Enable virtualenvwrapper
+# Check http://virtualenvwrapper.readthedocs.org/en/latest/ for more details
+source /usr/local/bin/virtualenvwrapper.sh
