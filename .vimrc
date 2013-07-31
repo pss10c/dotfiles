@@ -202,6 +202,14 @@ let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
+set wildignore+=*/_trial_temp/*
+set wildignore+=*/*.egg-info/*
+set wildignore+=*zeoanalytics*/build/*
+set wildignore+=*zeoanalytics*/develop/*
+
+
+
+
 
 
 " Settings for python-mode
