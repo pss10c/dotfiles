@@ -11,7 +11,22 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 # Enable all aliases
-. ~/.bashrc_aliases
+if [ -f ~/.bashrc_aliases ]; then
+    . ~/.bashrc_aliases
+fi
 
 # Load platform specific setup
-. ~/.bashrc_$platform
+if [ -e ~/.bashrc_$platform ]; then
+    . ~/.bashrc_$platform
+fi
+
+# Common settings
+if [ -f ~/.pythonrc ]; then
+    export PYTHONSTARTUP=~/.pythonrc
+fi
+
+# Enable virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
