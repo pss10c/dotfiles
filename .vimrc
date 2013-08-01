@@ -164,6 +164,15 @@ set noswapfile
 " Cute python
 Bundle 'ehamberg/vim-cute-python'
 
+" Plugin for commenting code
+Bundle 'scrooloose/nerdcommenter'
+
+" Session manager
+Bundle 'powerman/vim-plugin-autosess'
+
+" Enable virtualenvwrapper integration
+Bundle 'jmcantrell/vim-virtualenv'
+
 " Run python code
 map <F5> :w <CR>!clear <CR>:!python % <CR>
 
