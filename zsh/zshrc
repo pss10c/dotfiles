@@ -4,7 +4,7 @@
 . ~/.profile
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/pss/.oh-my-zsh
+export ZSH=/Users/spohorilyi/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -47,7 +47,7 @@ DISABLE_AUTO_UPDATE="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=/Users/pss/.zsh-custom
+ZSH_CUSTOM=/Users/spohorilyi/.zsh-custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -65,8 +65,8 @@ zle -N copy-earlier-word
 bindkey '\e,' copy-earlier-word
 
 # added by travis gem
-[ -f /Users/pss/.travis/travis.sh ] && source /Users/pss/.travis/travis.sh
-export VOLTA_HOME="/Users/pss/.volta"
+[ -f /Users/spohorilyi/.travis/travis.sh ] && source /Users/spohorilyi/.travis/travis.sh
+export VOLTA_HOME="/Users/spohorilyi/.volta"
 grep --silent "$VOLTA_HOME/bin" <<< $PATH || export PATH="$VOLTA_HOME/bin:$PATH"
 
 eval "$(direnv hook zsh)"
@@ -80,11 +80,11 @@ export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 
 # Wasmer
-export WASMER_DIR="/Users/pss/.wasmer"
+export WASMER_DIR="/Users/spohorilyi/.wasmer"
 [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
 
 # bun completions
-[ -s "/Users/pss/.bun/_bun" ] && source "/Users/pss/.bun/_bun"
+[ -s "/Users/spohorilyi/.bun/_bun" ] && source "/Users/spohorilyi/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -96,9 +96,9 @@ export PATH="$GO_INSTALL/bin:$PATH"
 
 
 if type eza > /dev/null; then
-  alias ls="eza"  
-  alias ll="eza -l"  
-  alias la="eza -la"  
+  alias ls="eza"
+  alias ll="eza -l"
+  alias la="eza -la"
 fi
 
 alias lg="lazygit"
